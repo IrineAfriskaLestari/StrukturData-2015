@@ -4,7 +4,18 @@ import java.io.FileOutputStream;
 
 public class KopiBerkas
 {
-      public void kopi(String sumber,String sasaran) throws IOException{
+    public static void main (String[] args){
+        try{
+            KopiBerkas x = new KopiBerkas();
+            x.kopi("Ujisumber.txt","kopi.txt");
+        }
+        
+        catch(IOException kesalahan){
+            System.out.printf("UjiSasaran : %s",kesalahan);
+        }
+    }
+    
+      public void kopi(String sumber,String sasaran) throws IOException {
       FileInputStream masukan = null;
       FileOutputStream keluaran = null;
       
@@ -28,5 +39,5 @@ public class KopiBerkas
                 keluaran.close();
         }
     }
-          
-}
+  }
+     
