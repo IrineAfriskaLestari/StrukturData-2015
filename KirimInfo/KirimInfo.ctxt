@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.params=pesan
+comment0.target=void\ whois(java.lang.String)
+comment1.params=pesan
+comment1.target=void\ kirimPerintah(java.lang.String)
+numComments=2
