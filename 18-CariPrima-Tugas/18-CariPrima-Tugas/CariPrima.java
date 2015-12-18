@@ -32,6 +32,7 @@ public class CariPrima {
                 while (benarPrima[counterThread].selesai()==false){ }
                 
             for(int q=0; q<JUMLAH_THREAD; q++){
+                
                 if(benarPrima[q].selesai()){
                     if(benarPrima[q].prima()){
                         
