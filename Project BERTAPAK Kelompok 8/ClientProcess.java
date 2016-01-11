@@ -110,7 +110,7 @@ public class ClientProcess implements Runnable {
             }
 
             if(keluaran == null){
-                keluaran = "error";
+                keluaran = "Format Waktu Yang Anda Gunakan Salah!";
             }
             // ambil jumlah, tampung
             keluaranWriter.write(keluaran);

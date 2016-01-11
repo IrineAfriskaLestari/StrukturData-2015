@@ -68,6 +68,7 @@ public class UserInformation {
                 if(nampung.after(pertama)&&nampung.before(terakhir)){
                     koordinat+="["+(String)((koor.get(x))[0])+"]";
                     jumlahMelangkah++;
+                    jumlahKoordinat++;
                     
                 }
                 else if(nampung.after(terakhir))
@@ -77,7 +78,7 @@ public class UserInformation {
             if(jumlahMelangkah==0 && koordinat.length()==0){
                 return "Data Tidak ditemukan";
             }
-            return "JumlahMelangkah = "+ jumlahMelangkah + " Koordinat = " +koordinat;
+            return "JumlahMelangkah = "+ jumlahMelangkah + "JumlahKoordinat = "+ jumlahKoordinat + " Koordinat = " +koordinat;
 
         }catch(Exception o){
             return null;
